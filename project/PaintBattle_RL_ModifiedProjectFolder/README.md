@@ -59,6 +59,7 @@ PaintBattleDQL/
 ├── battle_painter_model_315_64.pt      # Best model after training
 ├── annotated_group_13_paintbattle_dql-1.pdf
 └── README.md
+```
 
 ---
 
@@ -118,5 +119,6 @@ Includes:
 Architecture diagrams
 Reward analysis
 Training results and plots
+
 
 
