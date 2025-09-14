@@ -32,36 +32,33 @@ Inspired by the original game **Battle Painters**
 
 ## 🧱 Project Structure
 PaintBattleDQL/
-| 
 ├── websocket.py
 ├── dql.py
-│ 
 ├── headless_battle_painters.py
 ├── headless_dql.py
-│ 
 ├── index.html
 ├── training_coverage.csv
-│ 
 ├── js/
-│ ├── game.js
-│ ├── gameState.js
-│ ├── main.js
-│ ├── object.js
-│ ├── pickup.js
-│ ├── rl-agent.js
-│ └── vector.js
+│   ├── game.js
+│   ├── gameState.js
+│   ├── main.js
+│   ├── object.js
+│   ├── pickup.js
+│   ├── rl-agent.js
+│   └── vector.js
 ├── snd/
-│ ├── game.mp3
-│ └── mainmenu.mp3
+│   ├── game.mp3
+│   └── mainmenu.mp3
 ├── img/
-│ ├── brush.png
-│ └── ... other .png files
+│   ├── brush.png
+│   └── ... other .png files
 ├── css/
-│ ├── main.css
-│ └── main.less
-├── battle_painter_model_315_64.pt   # Best model after training
-├── annotated-group_13_paintbattle_dql-1.pdf
+│   ├── main.css
+│   └── main.less
+├── battle_painter_model_315_64.pt      # Best model after training
+├── annotated_group_13_paintbattle_dql-1.pdf
 └── README.md
+
 
 ---
 
@@ -135,4 +132,5 @@ Includes:
 
 Architecture diagrams
 Reward analysis
+
 Training results and plots
