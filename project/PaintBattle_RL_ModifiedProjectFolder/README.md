@@ -31,6 +31,7 @@ Inspired by the original game **Battle Painters**
 ---
 
 ## 🧱 Project Structure
+```plaintext
 PaintBattleDQL/
 ├── websocket.py
 ├── dql.py
@@ -134,3 +135,4 @@ Architecture diagrams
 Reward analysis
 
 Training results and plots
+
