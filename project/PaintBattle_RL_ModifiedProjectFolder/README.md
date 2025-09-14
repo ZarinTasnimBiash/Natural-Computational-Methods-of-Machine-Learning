@@ -60,34 +60,18 @@ PaintBattleDQL/
 ├── annotated_group_13_paintbattle_dql-1.pdf
 └── README.md
 
-
 ---
 
 ## 🧠 How It Works
 
-### 1. WebSocket Integration
+To enable agent-based control and training in the PaintBattle game, several key modifications were made to the original codebase. These adaptations were essential for allowing an external program to perceive game state and interact with the environment through actions. The major components of the system design are described in the [📄 Project Report](https://github.com/ZarinTasnimBiash/Natural-Computational-Methods-of-Machine-Learning/blob/main/project/Project_Report.pdf)
 
-- Modified the PaintBattle game to allow control via WebSocket
-- Agent sends actions (left, right, forward); game returns states
-- Supports both human and agent play modes
-
-### 2. RL Agent (DQL)
-
-- Implemented in PyTorch (`dql.py`)
-- 9-dimensional state vector (position, angle, canvas coverage, etc.)
-- Uses ε-greedy strategy, replay buffer, and target Q-network
-
-### 3. Headless Simulation (Fast Training)
-
-- `headless_battle_painters.py` simulates painting logic using grids
-- Faster training without rendering
-- Reward = canvas coverage + density-based exploration
-
+Next, we wanted to enable fast and efficient training of a DQL agent without the overhead of a visual game environment, and to refine the reward logic using improved density metrics, stride scaling, and memory-efficient state updates. Ergo, to accelerate the training process, a separate headless simulator was implemented. This simulator replicates the core mechanics of the original game—including player movement and painting logic while omitting colli- sions, pickups and user interface components. It maintains compatibility with the original game’s state and action interfaces, enabling faster training by eliminating visual overhead. For simplicity, the simulation environment includes only a single player. This setup allows the agent to focus on maximising canvas coverage without interference from other play- ers. While this does not capture the full dynamics of the multi-player game, it provides a predictable environment that helps shape an effective base behaviour. Its effectiveness in real multi-agent scenarios remains to be evaluated through further testing. Again, the major components of the system architecture are described in the [📄 Project Report](https://github.com/ZarinTasnimBiash/Natural-Computational-Methods-of-Machine-Learning/blob/main/project/Project_Report.pdf)
 ---
 
 ## 🧪 Running the Project
 
-### 🔁 Headless Mode (Recommended for Training)
+🔁 Headless Mode (Recommended for Training)
 
 ```bash
 python headless_battle_painters.py  # Terminal 1
@@ -127,12 +111,12 @@ Zarin Tasnim Biash – WebSocket integration, training setup, documentation
 
 📄 Report
 
-Full academic report: annotated-group_13_paintbattle_dql-1.pdf
+[Full academic report:](https://github.com/ZarinTasnimBiash/Natural-Computational-Methods-of-Machine-Learning/blob/main/project/Project_Report.pdf)
 
 Includes:
 
 Architecture diagrams
 Reward analysis
-
 Training results and plots
+
 
