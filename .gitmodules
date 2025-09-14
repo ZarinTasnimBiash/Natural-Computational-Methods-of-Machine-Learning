@@ -1,9 +1,6 @@
 [submodule "project"]
 	path = project
 	url = https://github.com/ZarinTasnimBiash/PaintBattle_RL.git
-[submodule "Original_Game"]
-	path = Original_Game
-	url = https://github.com/ZarinTasnimBiash/PaintBattle_RL.git
 [submodule "project/Original_Game"]
 	path = project/Original_Game
 	url = https://github.com/A1rPun/PaintBattle.git
