@@ -97,6 +97,8 @@ python dql.py
 To run a trained agent:
 python dql.py --mode inference --model_path models/best_model.pth
 
+---
+
 📚 Future Work
 
 Multi-agent training (competitive/cooperative)
@@ -119,6 +121,7 @@ Includes:
 Architecture diagrams
 Reward analysis
 Training results and plots
+
 
 
 
