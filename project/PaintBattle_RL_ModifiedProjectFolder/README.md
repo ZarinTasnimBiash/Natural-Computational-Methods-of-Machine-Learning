@@ -68,7 +68,7 @@ PaintBattleDQL/
 To enable agent-based control and training in the PaintBattle game, several key modifications were made to the original codebase. These adaptations were essential for allowing an external program to perceive game state and interact with the environment through actions. The major components of the system design are described in the [📄 Project Report](https://github.com/ZarinTasnimBiash/Natural-Computational-Methods-of-Machine-Learning/blob/main/project/Project_Report.pdf)
 
 Next, we wanted to enable fast and efficient training of a DQL agent without the overhead of a visual game environment, and to refine the reward logic using improved density metrics, stride scaling, and memory-efficient state updates. Ergo, to accelerate the training process, a separate headless simulator was implemented. This simulator replicates the core mechanics of the original game—including player movement and painting logic while omitting colli- sions, pickups and user interface components. It maintains compatibility with the original game’s state and action interfaces, enabling faster training by eliminating visual overhead. For simplicity, the simulation environment includes only a single player. This setup allows the agent to focus on maximising canvas coverage without interference from other play- ers. While this does not capture the full dynamics of the multi-player game, it provides a predictable environment that helps shape an effective base behaviour. Its effectiveness in real multi-agent scenarios remains to be evaluated through further testing. Again, the major components of the system architecture are described in the [📄 Project Report](https://github.com/ZarinTasnimBiash/Natural-Computational-Methods-of-Machine-Learning/blob/main/project/Project_Report.pdf)
----
+
 
 ## 🧪 Running the Project
 
@@ -119,6 +119,7 @@ Includes:
 Architecture diagrams
 Reward analysis
 Training results and plots
+
 
 
 
