@@ -9,8 +9,8 @@ Forked from A1rPun to try some reinforcement learning on this game.
 - Player 1 is pink
 - Use the left & right arrow keys to move
 
-Inspired by the original game **Battle Painters**
-(https://github.com/A1rPun/PaintBattle/blob/f2c291d1cdcb09aa06d7d03a2a276eb4c0e15321/img/original.jpg)
+Inspired by the original game 
+[**Battle Painters**](https://github.com/A1rPun/PaintBattle/blob/f2c291d1cdcb09aa06d7d03a2a276eb4c0e15321/img/original.jpg)
 
 # 🎨 PaintBattleDQL: Deep Q-Learning Agent for a 2D Painting Game
 
@@ -121,6 +121,7 @@ Includes:
 Architecture diagrams
 Reward analysis
 Training results and plots
+
 
 
 
