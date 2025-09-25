@@ -1,4 +1,4 @@
-Paint Battle
+Paint Battle -> (Please go to the project folder for details)
 =======
 
 Forked from A1rPun to try some reinforcement learning on this game.
